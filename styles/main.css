@@ -43,10 +43,10 @@ flex-wrap: wrap;
 }
 
 .form-header h1 span {
-background: #ffd966;
+background: #1fd346;
 color: #1e2b3c;
 font-size: 1rem;
-padding: 0.2rem 0.8rem;
+padding: 10px 10px;
 border-radius: 60px;
 font-weight: 600;
 }
