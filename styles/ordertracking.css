@@ -1,0 +1,134 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: linear-gradient(145deg, rgb(86, 175, 230) 0%, grey 100%);
+font-family:Arial, Helvetica, sans-serif;
+padding: 2rem 1.5rem;
+min-height: 100vh;
+}
+.fieldcontwrapper{
+    width:100%;
+    max-width: calc(var(--form-width) + var(--form-cont-space-right) +  var(--form-cont-space-left));
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: var(--form-cont-space-top) var(--form-cont-space-right) var(--form-cont-space-bottom) var(--form-cont-space-left);
+    float: var(--form-align);    
+}
+
+/* Main container */
+.form-container {
+    font-family: "Heebo" sans-serif;
+max-width: 1300px;
+margin: 0 auto;
+background: rgba(255, 255, 255, 0.96);
+border-radius: 2rem;
+box-shadow: 0 25px 45px -12px rgba(201, 111, 111, 0.25), 0 8px 18px rgba(0, 0, 0, 0.05);
+overflow: hidden;
+transition: all 0.2s ease;
+}
+
+/* Stylish header */
+.form-header {
+background: linear-gradient(135deg, #3283fc, #3283fc);
+padding: 2rem 2rem 1.8rem;
+color: white;
+text-align: center;
+}
+h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 36px;
+color:#3283fc;
+font-weight: 500;
+letter-spacing: -0.3px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+flex-wrap: wrap;
+}
+
+.hdrLogoImgDiv{
+max-width: var(--header-logo-size);
+}
+h2{
+    font-size:36px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3283fc;
+    font-weight:500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 10px 0px 20px auto;
+}
+h3{
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3283fc;
+    font-weight:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 30px 0px 30px auto;
+}
+.heading-form h1{
+  font-size: 36px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color:#194381;
+  justify-content:left ;
+  align-items: left;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #a39e9e; /* Separator line between items */  
+}
+
+input {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 24px;
+padding: 10px 10px 0px 10px;
+border: 1px solid #95999b;
+color:#194381;
+outline: none;
+width: 70%;
+}
+/* Two column grid for compact fields */
+.form-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem 2rem;
+}
+
+/* Each form group */
+.form-group {
+display: flex;
+flex-direction:row;
+gap: 2.3rem;
+padding-bottom: 30px;
+padding-left: 10px;
+}
+
+label {
+font-size: 24px;
+font-weight: 600;
+color:#194381;
+letter-spacing: 0.3px;
+display: flex;
+align-items: left;
+gap: 0.5rem;
+justify-content:left;
+padding: 10px 90px 10px 10px;
+margin-bottom: 30px;
+  
+}
+span{
+    font-size: 24px;
+    color:red;
+}
+

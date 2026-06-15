@@ -13,7 +13,7 @@ min-height: 100vh;
 
 /* Main container */
 .form-container {
-font-family: "Heebo" sans-serif;
+    font-family: "Heebo" sans-serif;
 max-width: 1300px;
 margin: 0 auto;
 background: rgba(255, 255, 255, 0.96);
@@ -25,6 +25,7 @@ transition: all 0.2s ease;
 
 /* Stylish header */
 .form-header {
+    font-size: medium;
 background: linear-gradient(135deg, #1e2b3c, #0f212e);
 padding: 2rem 2rem 1.8rem;
 color: white;
@@ -43,10 +44,10 @@ flex-wrap: wrap;
 }
 
 .form-header h1 span {
-background: #1fd346;
+background: #ffd966;
 color: #1e2b3c;
 font-size: 1rem;
-padding: 10px 10px;
+padding: 0.2rem 0.8rem;
 border-radius: 60px;
 font-weight: 600;
 }
@@ -54,8 +55,7 @@ font-weight: 600;
 .form-header p {
 margin-top: 0.7rem;
 opacity: 0.85;
-font-size: 24px;
-
+font-size:16;
 }
 
 /* Form body */
