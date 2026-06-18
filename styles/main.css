@@ -4,7 +4,7 @@
     font-family:Arial, Helvetica, sans-serif;
     justify-content:right;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 16px;
     color:rgb(6, 6, 5);
     padding: 8px 25px 5px 10px; 
     border-radius: 10px;
@@ -30,7 +30,7 @@ li {
 
 /*logo writing style set*/
 .text-logo {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: 1200;
   background: linear-gradient(to right,rgb(131, 184, 201), #05074e);
   -webkit-background-clip: text;
@@ -113,7 +113,7 @@ max-width: var(--header-logo-size);
 }
 /**Form Heading **/
 h2{
-    font-size:36px;
+    font-size:18px;
     font-family:Arial, Helvetica, sans-serif;
     color:#3283fc;
     font-weight:700px;
@@ -125,7 +125,7 @@ h2{
     padding: 10px 0px 20px auto;
 }
 h3{
-    font-size:24px;
+    font-size:18px;
     font-family:Arial, Helvetica, sans-serif;
     color:#3283fc;
     font-weight:400px;
@@ -140,7 +140,7 @@ h3{
 
 .heading-form h1{
   display: flex;
-  font-size: 36px;
+  font-size: 18px;
   font-family:Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #426ba9;
@@ -196,7 +196,7 @@ max-width: 760px
 
 input {
 font-family:Arial, Helvetica, sans-serif;
-font-size: 28px;
+font-size: 12px;
 max-width: 1200px;
 padding: 20px 10px 20px 10px;
 border: 1px solid #95999b;
@@ -210,27 +210,27 @@ ul {
 
 label {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 28px;
+font-size: 12px;
 color:#426ba9;
 align-items: left;
 width:1200px; 
 }
 span{
-    font-size: 28px;
+    font-size: 12px;
     font-weight: 600px;
     color:red;  
     padding-left: 5px;
 }
 aside h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 500;
     color:rgb(20, 18, 18);
     padding-left: 30px;
 }
 aside h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     color:black;
 }
@@ -238,7 +238,7 @@ aside li{
     display: block;
     color:linear-gradient(to right,rgb(131, 184, 201), #05074e);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
+    font-size: 12px;
     padding-bottom: 20px;
 
 }
