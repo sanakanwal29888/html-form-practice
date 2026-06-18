@@ -3,63 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS DESIGNS</title>
+    <link rel="icon" type="image/x-icon" href="/images/hibbans-logo.png">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <title>✨ Complete HTML Form | All Input Types with Modern Design</title>
-</head>
+   </head>
 <body>
+    <!-- Navigation Links -->
+    <nav class="nav-menu">
+     <ul>
+        <div><li><h1 class="text-logo">HTML FORMS DESIGNS@</h1></li></div>
+        <div><li class="li"> <a href="index.html" class="active">Home</a></li>
+        <div><li class="li"> <a href="#" >HTML Forms Designs </a></li></div>
+        <div><li class="li"><a href="#">Order/delievery Tracking </a></li></div>
+        <div><li class="li"><a href="#">Business Forms</a></li></div>  
+        <div><li class="li"><a href="#">Construction Forms</a></li></div>  
+    </ul>
+    </nav>
+    </div>
+
+<div class="container">
+    <main>
     <div class="form-container">
-    <div class="form-header">
-    <h1>📋 All HTML5 Input Types
-    <span>Complete Form</span>
-    </h1>
-    <p>Every standard input + select, textarea, datalist — modern, responsive design</p>
-    </div>
-    </div>
-
+    <div class="hdrLogoImgDiv">
+        <img aria-hidden="true" src="./images/formheader.png" width="100%">
+        <h2>Order delievery/ Tracking </h2>
+        <h3>Trace Your Order</h3>
 <form id="masterForm" action="#" method="post">
-<!-- Section 1: Basic text & user info -->
-<fieldset>
-<legend>📝 Personal information</legend>
-<div class="form-grid">
+    <div class="heading-form-seperate">
+    <div class="heading-form"><h1>Personal Information</h1></div></div>
 
-<div class="form-group">
-<label>🔤Full Name</label>
-<input type="text" name="fullname" placeholder="e.g. Sana Kanwal" required>
-</div>
+    <!-- Section 1: Personal Information -->
+    <div class="form-grid">
+        <div class="form-group">
+            <label> Name <span>*</span></label>
+            <input type="text" name="fullname" placeholder="e.g. Sana Kanwal" required>
+        </div>
+        <div class="form-group">
+            <label> Email <span>*</span></label>
+            <input type="text" name="eamil" placeholder="&#9993" required>
+        </div>
+        <div class="form-group">
+            <label>Contact Number<span>&nbsp;*</span></label>
+            <input type="text" name="contact number" placeholder="&#9742" required>
+        </div>
+    </div>
+    
+            <div class="heading-form-seperate">
+        <div class="heading-form"><h1>Order Information</h1></div></div>
+        </div>
+    <div class="form-grid">
+        <div class="form-group">
+                <label>Order ID<span>*</span></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
+        <div class="form-group">
+                <label>Delievery destination<span>*</span></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
 
-<div class="form-group">
-<label>🔒 Password</label>
-<input type="password" name="password" placeholder="At least 6 characters">
-</div>
+        <div class="form-group">
+                <label></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
+        <div class="form-group-inside">
+                 <label>Street Address</label></div>
+         <div class="form-group">
+                <label></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
+        <div class="form-group-inside">
+            <label>Address Line 2</label></div>
+            
+        <div class="form-group-inside-input">
+            <input type="text" name="contact number" placeholder="" required>
+            <input type="text" name="contact number" placeholder="" required>
+            </div>
+        <div class="form-group-inside-input">
+            <label>City</label>
+            <label>State/Region/Province</label></div>
 
-<div class="form-group">
-<label>📧 Email</label>
-<input type="email" name="email" placeholder="name@example.com" required>
-</div>
-<div class="form-group">
-<label>📞 Telephone (tel)</label>
-<input type="tel" name="phone" placeholder="+92 301 9999 999">
-</div>
-<div class="form-group">
-<label>🌐 Website (url)</label>
-<input type="url" name="website" placeholder="https://example.com">
-</div>
-<div class="form-group">
-<label>🔍 Search</label>
-<input type="search" name="searchQuery" placeholder="Search products...">
-</div>
-<div class="form-group full-width">
-<label>📄 Additional Notes</label>
-<textarea rows="3" name="comments" placeholder="Enter your detailed feedback or message..."></textarea>
-</div>
-</div>
-</fieldset>
+         <div class="form-group-inside-input">
+            <input type="text" name="contact number" placeholder="" required>
+            <input list="countries" id="country-search" name="country" placeholder="Type to search...">
 
-
-   
-</body>
+ <datalist id="countries">
+  <option value="Australia">
+  <option value="Canada">
+  <option value="France">
+  <option value="Germany">
+  <option value="India">
+  <option value="Pakistan">
+  <option value="United Kingdom">
+  <!-- To pre-select, add the value directly to the input field above -->
+  <option value="United States">
+</datalist>
+            </div>
+        <div class="form-group-inside-input">
+            <label>Postal Zip Code</label>
+            <label>Country</label></div>
+</div>
+     <div class="form-group">
+         <label>Where did yoy place your order?<span>&nbsp;*</span></label>
+        <div class="form-group-date">         
+              <!-- "required" forces the user to choose a date before submitting -->
+      <input type="date" id="travel-date" name="travel_date" required></div>
+    </div>
+    </div>
+    </form>
+    </main>
+        <aside>
+         <h1>Types</h1>
+            <ul>
+                  <a href="#"> <li>Business Forms</li></a> 
+                  <a href="#"> <li>Construction Forms</li></a> 
+                  <a href="#"> <li>Order delievery Tracking Forms</li></a> 
+                  <a href="#"> <li>Business Forms</li></a> 
+                  <a href="#"> <li>Business Forms</li></a> 
+            </ul>
+            <div class="heading-form-seperate"></div>
+        </aside> 
+             </div>
+                </div>
+                </div> 
+                 </div>
+    <footer><p>&copy; 2026 HTML5 Forms Designs@</p></footer>
+</body> 
 </html>
