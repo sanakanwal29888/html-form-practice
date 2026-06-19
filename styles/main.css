@@ -1,6 +1,7 @@
 body {
-    margin: 0;
+  margin:auto;  
 }
+
 /*for Menu Items*/
 .nav-menu a {
     text-decoration: none;
@@ -58,25 +59,25 @@ justify-content:left;
 gap: 2px; 
         }
 .container { 
-display: flex;
-margin:auto;
+margin:0;
 
  }
 main { 
-flex: 0.5; 
-padding: 20px; 
-background: #5590f5; 
-background-repeat: round;
-background-attachment:fixed;
-background-size:cover;
+flex: 2;
+background: #1aaa5d;
+padding:40px;
+border-radius: 15px;
+color:white;
 }
-        
-aside { 
-padding: 10px; 
-background: white;
-font-family:Arial, Helvetica, sans-serif; 
-}
-
+      
+ aside { 
+            flex: 1; 
+            padding: 20px; 
+            background: rgb(228, 225, 225);
+            color:rgb(190, 190, 186);
+            font-family:Arial, Helvetica, sans-serif; 
+        }
+       
 footer { 
 background: black; 
 color:rgb(236, 195, 104); 
@@ -107,7 +108,7 @@ border-radius: 2rem;
 box-shadow: 0 25px 45px -12px rgba(130, 197, 30, 0.25), 0 8px 18px rgba(44, 158, 106, 0.05);
 overflow: hidden;
 transition: all 0.2s ease;
-width:100%;
+width:55%;
 }
 .hdrLogoImgDiv{
 max-width: var(--header-logo-size);
