@@ -3,22 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Forms Templates Designs</title>
+    <title>Order Tracking Form</title>
+    <link rel="icon" type="image/x-icon" href="/images/tracking.png">
     <link rel="stylesheet" href="./styles/main.css">
-    </head>
+    <style>
+        /* Base Page Setup */
+        body {
+            margin: 0px;
+            padding: 0px; /* Removed body padding to make layout full-width */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Keeps footer at the bottom of short pages */
+        }
+
+        /* 1. Header & Navigation Styles */
+        .logo-container {
+            padding: 10px 20px;
+            background-color: hsl(0, 0%, 57%);
+            display: flex;
+            align-items: center;
+           justify-content: space-between;
+        }
+
+        .text-logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: #333333;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .text-logo:hover {
+            color: #007bff;
+        }
+
+        .navbar ul {
+            list-style-type: none;  
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+        }
+         
+        .navbar a {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: hsl(0, 5%, 4%);
+            color: #87b8ed;
+        }
+
+        /* 2. Main Body Layout (Content + Sidebar) */
+        .main-layout {
+            display: flex;
+            flex: 1; /* Pushes footer down */
+            padding: 20px;
+            gap: 20px; /* Space between content and sidebar */
+            max-width: 1200px;
+            margin: 0 auto; /* Centers the whole website layout */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* 3. Main Content Area (75% Width) */
+        .content-area {
+            flex: 3; 
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* 4. Sidebar Area (25% Width) */
+        .sidebar {
+            flex: 1; 
+            background-color: #e9ecef;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: fit-content; /* Only takes up height of its content */
+        }
+
+        /* 5. Footer Styles */
+        footer {
+            background-color: hsl(0, 5%, 4%);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            .logo-container, .main-layout, .navbar ul {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .navbar a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello This is my first form window</h1>
+
+<!-- Header Segment -->
+<header>
+  <div class="logo-container">
+    <a href="" class="text-logo">HibForge</a>
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="templates.html">Templates</a></li>
-            <li><a href="contact.html">Contact</a></li>
+           <li><a href="">Home</a></li>
+           <li><a href="">About</a></li>
+           <li><a href="">Templates Designs</a></li>
+           <li><a href="">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
-        <h3>This is the Home page</h3>
-        <p>HTML forms are essential web development tools used to collect user input and submit it to a server for processing.</p>
+  </div>
+</header>
+
+<!-- Main Wrapper for Content and Sidebar -->
+<div class="main-layout">
+    
+    <!-- Left Side: Content Section -->
+    <main class="content-area">
+        <div class="form-container">
+    <div class="hdrLogoImgDiv">
+        <img aria-hidden="true" src="./images/formheader.png" width="100%">
+        <h2>Order delievery/ Tracking </h2>
+        <h3>Trace Your Order</h3>
+<form id="masterForm" action="#" method="post">
+    <div class="heading-form-seperate">
+    <div class="heading-form"><h1>Personal Information</h1></div></div>
+
+    <!-- Section 1: Personal Information -->
+    <div class="form-grid">
+        <div class="form-group">
+            <label> Name <span>*</span></label>
+            <input type="text" name="fullname" placeholder="e.g. Sana Kanwal" required>
+        </div>
+        <div class="form-group">
+            <label> Email <span>*</span></label>
+            <input type="text" name="eamil" placeholder="&#9993" required>
+        </div>
+        <div class="form-group">
+            <label>Contact Number<span>&nbsp;*</span></label>
+            <input type="text" name="contact number" placeholder="&#9742" required>
+        </div>
+    </div>
+    
+            <div class="heading-form-seperate">
+        <div class="heading-form"><h1>Order Information</h1></div></div>
+        </div>
+    <div class="form-grid">
+        <div class="form-group">
+                <label>Order ID<span>*</span></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
+        <div class="form-group">
+                <label>Delievery destination<span>*</span></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+                <label></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
+        <div class="form-group-inside">
+                 <label>Street Address</label></div>
+         <div class="form-group">
+                <label></label>
+            <input type="text" name="contact number" placeholder="" required>
+        </div>
+        <div class="form-group-inside">
+            <label>Address Line 2</label></div>
+            
+        <div class="form-group-inside-input">
+            <input type="text" name="contact number" placeholder="" required>
+            <input type="text" name="contact number" placeholder="" required>
+            </div>
+        <div class="form-group-inside-input">
+            <label>City</label>
+            <label>State/Region/Province</label></div>
+
+         <div class="form-group-inside-input">
+            <input type="text" name="contact number" placeholder="" required>
+            <input list="countries" id="country-search" name="country" placeholder="Type to search...">
+
+ <datalist id="countries">
+  <option value="Australia">
+  <option value="Canada">
+  <option value="France">
+  <option value="Germany">
+  <option value="India">
+  <option value="Pakistan">
+  <option value="United Kingdom">
+  <!-- To pre-select, add the value directly to the input field above -->
+  <option value="United States">
+</datalist>
+            </div>
+        <div class="form-group-inside-input">
+            <label>Postal Zip Code</label>
+            <label>Country</label></div>
+</div>
+     <div class="form-group">
+         <label>Where did yoy place your order?<span>&nbsp;*</span></label>
+        <div class="form-group-date">         
+              <!-- "required" forces the user to choose a date before submitting -->
+      <input type="date" id="travel-date" name="travel_date" required></div>
+     </div></div></form>
     </main>
+
+    <!-- Right Side: Sidebar Section -->
+    <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <p>Use this space for site announcements, help text, ads, or secondary actions.</p>
+        <h3>Quick Links</h3>
+        <p>Use this space for site announcements, help text, ads, or secondary actions.</p>
+    
+    </aside>
+
+</div>
+
+<!-- Footer Segment -->
+<footer>
+    <p>&copy; 2026 HibForge. All rights reserved.</p>
+</footer>
+ 
 </body>
 </html>
