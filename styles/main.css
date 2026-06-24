@@ -1,5 +1,9 @@
+html{
+    border: 1px solid blue;
+}
 body{
     margin: 0px;
+    padding: 20PX;
 }
 main{
     margin-left:20px;
@@ -32,4 +36,187 @@ h1{
 .navbar li{
     float:left;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.container { 
+margin:0px;
+padding: 0px;
+ }
+main { 
+flex: 3;
+padding: 20PX;
+    background: #1aaa5d;
+color:white;
+}
+      
+ aside { 
+            flex: 1; 
+            padding: 20px; 
+            background: rgb(228, 225, 225);
+            color:rgb(190, 190, 186);
+            font-family:Arial, Helvetica, sans-serif; 
+        }
+       
+footer { 
+background: black; 
+color:rgb(236, 195, 104); 
+text-align: center; 
+padding: 1rem; }
+
+div {
+  display:inline-block;
+}
+/* for moving text*/
+
+.slide-left {
+position: relative;
+animation: moveLeft 15s linear infinite;
+white-space: nowrap;
+  }
+
+ @keyframes moveLeft {
+    from { left: 100%; } /* Start at the far right */
+    to { left: -100%; }   /* End at the far left */
+  }
+
+/* Main container */
+.form-container {
+font-family: "Heebo" sans-serif;
+background: rgba(255, 255, 255, 0.96);
+border-radius: 2rem;
+transition: all 0.2s ease;
+
+}
+.hdrLogoImgDiv{
+max-width: var(--header-logo-size);
+}
+/**Form Heading **/
+h2{
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3283fc;
+    font-weight:700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 12px;
+    flex-wrap: wrap;
+    padding: 10px 0px 20px auto;
+}
+h3{
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3283fc;
+    font-weight:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 30px 0px 30px auto;
+}
+/**Form Heading End**/
+
+.heading-form h1{
+  display: flex;
+  font-size: 24px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #426ba9;
+  justify-content:left ;
+  align-items: left;
+  padding: 10px 1420px 3px 5px;
+  margin-bottom: 10px;
+  width:max-content;
+}
+.heading-form-seperate{
+  border-bottom: 1px solid #a39e9e;
+  width:100%; /* Separator line between items */
+  margin-bottom: 20px;  
+}
+
+/* Two column grid for compact fields */
+.form-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem 2rem;
+width:1500px    ;
+}
+
+/* Each form group */
+.form-group {
+display: flex;
+flex-direction:row;
+padding-bottom: 30px;
+padding: 10px 90px 10px 20px;
+}
+.form-group-inside {
+display: flex;
+flex-direction:row;
+padding-bottom: 10px;
+padding:10px 450px 20px 650px;
+}
+.form-group-inside-input {
+display: flex;
+flex-direction:row;
+padding-bottom: 10px;
+padding:10px 10px 20px 650px;
+max-width: 760px;
+}
+.form-group-date {
+display: flex;
+flex-direction:row;
+padding-bottom: 30px;
+width:500px;
+padding:10px 105px 20px 0px;
+max-width: 760px
+;
+
+}
+
+input {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 18px;
+max-width: 1200px;
+padding: 20px 10px 20px 10px;
+border: 1px solid #95999b;
+width: 100%;
+border-radius: 10px;
+}
+ul{
+  text-decoration: none;
+  list-style-type: square;
+}
+
+label {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+color:#426ba9;
+align-items: left;
+width:1200px; 
+}
+span{
+    font-size: 18px;
+    font-weight: 600px;
+    color:red;  
+    padding-left: 5px;
+}
+aside h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(20, 18, 18);
+    padding-left: 30px;
+}
+aside h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+}
+aside li{
+    display: block;
+    color:linear-gradient(to right,rgb(131, 184, 201), #05074e);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+
 }
