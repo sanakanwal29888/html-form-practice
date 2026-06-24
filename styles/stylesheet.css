@@ -1,0 +1,287 @@
+ body {
+            margin: 0px;
+            padding: 0px; /* Removed body padding to make layout full-width */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Keeps footer at the bottom of short pages */
+        }
+
+        /* 1. Header & Navigation Styles */
+        .logo-container {
+            padding: 10px 20px;
+            background-color: hsl(0, 0%, 57%);
+            display: flex;
+            align-items: center;
+           justify-content: space-between;
+        }
+
+        .text-logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: #333333;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .text-logo:hover {
+            color: #007bff;
+        }
+
+        .navbar ul {
+            list-style-type: none;  
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+        }
+         
+        .navbar a {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: hsl(0, 5%, 4%);
+            color: #87b8ed;
+        }
+
+        /* 2. Main Body Layout (Content + Sidebar) */
+        .main-layout {
+            display: flex;
+            flex: 1; /* Pushes footer down */
+            padding: 20px;
+            gap: 20px; /* Space between content and sidebar */
+            max-width: 1200px;
+            margin: 0 auto; /* Centers the whole website layout */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* 3. Main Content Area (75% Width) */
+        .content-area {
+            flex: 3; 
+            background-color: rgb(50, 53, 54);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(164, 133, 133, 0.05);
+        }
+
+        /* 4. Sidebar Area (25% Width) */
+        .sidebar {
+            flex: 1; 
+            background-color: #e9ecef;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            height: fit-content; /* Only takes up height of its content */
+        }
+
+        /* 5. Footer Styles */
+        footer {
+            background-color: hsl(0, 5%, 4%);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            .logo-container, .main-layout, .navbar ul {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .navbar a {
+                text-align: center;
+            }
+        }
+/* Apply this to your main form wrapper class */
+.form-container {
+  width: 100%;
+  max-width: 750px;       /* Keeps the form from over-stretching */
+  margin: 40px auto;       /* Centers the entire form on the webpage */
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;  /* Prevents padding from breaking layout math */
+}
+/* Wrap each label + input pair in a row div */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Give labels a fixed, predictable allocation */
+.form-row label {
+  width: 30%;
+  min-width: 150px;
+  padding-right: 15px;
+  font-size: 14px;
+  color: #333333;
+  text-align: left;
+}
+
+/* Force inputs to fill the remaining horizontal container room */
+.form-row input, 
+.form-row select {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 15px;
+  box-sizing: border-box; /* Crucial so padding doesn't widen the input */
+}
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-row label,
+  .form-row input,
+  .form-row select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.hdrLogoImgDiv{
+max-width: var(--header-logo-size);
+}
+/**Form Heading **/
+h2{
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3283fc;
+    font-weight:700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 12px;
+    flex-wrap: wrap;
+    padding: 10px 0px 20px auto;
+}
+h3{
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#3283fc;
+    font-weight:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 30px 0px 30px auto;
+}
+/**Form Heading End**/
+
+.heading-form h1{
+  display: flex;
+  font-size: 24px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #426ba9;
+  justify-content:left ;
+  align-items: left;
+  padding: 10px 1420px 3px 5px;
+  margin-bottom: 10px;
+  width:max-content;
+}
+.heading-form-seperate{
+  border-bottom: 1px solid #a39e9e;
+  width:100%; /* Separator line between items */
+  margin-bottom: 20px;  
+}
+
+/* Two column grid for compact fields */
+.form-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem 2rem;
+width:1500px    ;
+}
+span{
+    font-size: 18px;
+    font-weight: 600px;
+    color:red; 
+    gap:10px 10px; 
+    padding-left: 25px;
+}
+aside h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(20, 18, 18);
+    padding-left: 30px;
+}
+aside h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+}
+aside li{
+    display: block;
+    color:linear-gradient(to right,rgb(131, 184, 201), #05074e);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Grid Layout */
+.grid-form {
+  display: grid;
+  /* Columns: 1st column fits the label width, 2nd column takes remaining space */
+  grid-template-columns: max-content 1fr; 
+  
+  /* Layout Spacing */
+  row-gap: 20px;       /* Adds even vertical space between all form rows */
+  column-gap: 15px;    /* Adds clean space between the label and its input */
+  align-items: center; /* Centers labels vertically with their input boxes */
+  
+  /* Container Constraints */
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff;
+}
+
+/* Styling for Form Labels */
+.grid-form label {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  text-align: left;
+}
+
+/* Styling for Form Inputs */
+.grid-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Change input border color when clicked */
+.grid-form input:focus {
+  border-color: #4a90e2;
+}
